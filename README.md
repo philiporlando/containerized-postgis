@@ -1,7 +1,16 @@
-# PostgreSQL + PostGIS Database Container
+# Containerized PostGIS with Automated Backup and Restore
 
 ## Overview
+
+This repository provides a set of make commands designed to enhance the reliability and safety of containerized PostgreSQL+PostGIS databases. Containerizing databases can be challenging due to their inherently stateful nature, which poses risks of data loss when containers are stopped or removed.
+
 This repository houses a Docker Compose setup designed to deploy a PostgreSQL database with the PostGIS extension. It extends the [postgis/postgis](https://github.com/postgis/docker-postgis) base image. It's configured to be flexible for development, testing, and production environments, with easy setup and teardown commands.
+
+## Key Features
+
+- **Automated Backups**: Perform database dumps automatically before the container stops, ensuring that no data is lost during shutdowns.
+- **Restore from Backups**: Easily restore your database from backups, allowing you to recover quickly from any data loss incidents.
+- **Make Commands**: Simplified `make` commands streamline the backup and restore processes, making it easier to manage your containerized database.
 
 ## Prerequisites
 - Basic knowledge of Docker, Make, PostgreSQL, and PostGIS.
