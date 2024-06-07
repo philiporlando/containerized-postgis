@@ -1,4 +1,4 @@
-# Containerized PostGIS with Automated Backup and Restore
+# Containerized PostGIS with Automated Backup and Restore Utils
 
 ## Overview
 
