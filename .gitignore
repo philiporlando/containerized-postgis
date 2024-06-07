@@ -1,0 +1,15 @@
+# Environment
+.env
+*.code-workspace
+
+# SSL Certificate Config
+server.crt
+server.key
+
+# Postgres Data
+data/*
+config/*
+backups/*
+
+!postgresql.conf
+!.gitkeep
