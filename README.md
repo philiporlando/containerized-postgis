@@ -31,7 +31,7 @@ cd containerized-postgresql
 Before you begin using the container, ensure you have an `.env` file at the root of the project with the necessary environment variables. Here's an example template for `.env`:
 
 ```bash
-POSTGRES_CONTAINER=containerized-postgresql-prod
+POSTGRES_CONTAINER=containerized-postgis-prod
 POSTGRES_DB=your_database
 POSTGRES_USER=your_user
 POSTGRES_PASSWORD=your_secure_password
@@ -82,7 +82,7 @@ A healthy container should look similar to the below example:
 
 ```bash
 NAME                   IMAGE             COMMAND                                                   SERVICE   CREATED          STATUS                    PORTS
-containerized-postgresql-prod   postgis/postgis   "docker-entrypoint.sh postgres -c max_connections=1000"   postgis   17 minutes ago   Up 17 minutes (healthy)   0.0.0.0:5432->5432/tcp 
+containerized-postgis-prod   postgis/postgis   "docker-entrypoint.sh postgres -c max_connections=1000"   postgis   17 minutes ago   Up 17 minutes (healthy)   0.0.0.0:5432->5432/tcp 
 ```
 
 ### Viewing Logs
