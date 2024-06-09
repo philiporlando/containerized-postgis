@@ -37,6 +37,7 @@ POSTGRES_USER=your_user
 POSTGRES_PASSWORD=your_secure_password
 POSTGRES_SHARED_BUFFERS=16GB  # 25% of your system's available RAM is recommended
 POSTGRES_MAX_CONNECTIONS=100  # Adjust based on your needs
+BACKUP_DIR=your_backup_directory
 ```
 
 ## Getting Started
