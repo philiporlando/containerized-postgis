@@ -8,6 +8,7 @@
 echo "Validating environment variables..."
 [ -z "$POSTGRES_USER" ] && echo "POSTGRES_USER is not set" && exit 1
 [ -z "$POSTGRES_DB" ] && echo "POSTGRES_DB is not set" && exit 1
+[ -z "$POSTGRES_PORT" ] && echo "POSTGRES_PORT is not set" && exit 1
 [ -z "$POSTGRES_CONTAINER" ] && echo "POSTGRES_CONTAINER is not set" && exit 1
 [ -z "$BACKUP_DIR" ] && echo "BACKUP_DIR is not set" && exit 1
 echo "Environment variables validated."
