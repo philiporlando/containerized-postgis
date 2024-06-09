@@ -38,4 +38,4 @@ DECLARE
     END IF;
 END $$;
  
- COMMIT;
+COMMIT;
