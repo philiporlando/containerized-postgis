@@ -32,8 +32,9 @@ Before you begin using the container, ensure you have an `.env` file at the root
 
 ```bash
 POSTGRES_CONTAINER=containerized-postgis-prod
-POSTGRES_DB=your_database
-POSTGRES_USER=your_user
+POSTGRES_DB=your_database_name
+POSTGRES_PORT=your_database_port
+POSTGRES_USER=your_user_name
 POSTGRES_PASSWORD=your_secure_password
 POSTGRES_SHARED_BUFFERS=16GB  # 25% of your system's available RAM is recommended
 POSTGRES_MAX_CONNECTIONS=100  # Adjust based on your needs
