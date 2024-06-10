@@ -13,7 +13,7 @@ services:
       POSTGRES_SHARED_BUFFERS: ${POSTGRES_SHARED_BUFFERS} # 25% of available RAM recommended
     command: postgres -c "max_connections=${POSTGRES_MAX_CONNECTIONS}"
     ports:
-      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+      - "${POSTGRES_PORT}:5432"
     volumes:
       # - ./config/postgres/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
       # - ./data:/var/lib/postgresql/data
